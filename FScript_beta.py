@@ -33,7 +33,6 @@ print("   2] Scanning")
 print("")
 print("   3] BruteForcing")
 print("")
-print("   4] Sniffing / Spoofing")
 print("")
 print("")
 FS = input("FScript:~$ ")
@@ -43,10 +42,14 @@ if FS == "01" or FS == "1":
   print("")
   print("")
   print("")
-  print("В стадии разработки.")
   print("")
   print("")
   print("")
+  print("")
+  ip = input("(@)IP> ")
+  os.system("ping %s " %(ip))
+  
+  
 
 elif FS == "02" or FS == "2":
   os.system("clear")
@@ -57,7 +60,7 @@ elif FS == "02" or FS == "2":
   print("")
   print(" 1] Nmap")
   print("")
-  print(" 2] ")
+  print("")
   print("")
   print("")
   print("")
@@ -199,10 +202,6 @@ elif FS == "03" or FS == "3":
     os.system("clear")
     os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (ip, login, word))
 
-elif FS == "04" or FS == "4":
-  os.system("clear")
-  print("")
-  print("")
 
 
 
